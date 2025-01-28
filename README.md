@@ -17,5 +17,8 @@ player_positions = [1, 1]  # Two players starting at position 1
         return  # Do not move if it exceeds the last cell
     player_positions[player_idx] = snakes_ladders.get(new_pos, new_pos)
     ```
+Win Condition: Check if a player reaches position 100.
+if player_positions[player_idx] == 100:
+    print(f"Player {player_idx + 1} wins!")
 
 
