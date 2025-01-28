@@ -1,4 +1,6 @@
 # SNAKES-AND-LADDER-GAME
+
+
 snakes_ladders = {
     3: 22, 5: 8, 11: 26, 17: 4, 19: 7,
     20: 29, 27: 1, 21: 9, 34: 16, 25: 30,
@@ -7,8 +9,8 @@ snakes_ladders = {
 
 #List for Player Positions
 player_positions = [1, 1]  # Two players starting at position 1
-#DICE ROLL
- import random
+#DICE ROL
+import random
  dice_roll = random.randint(1, 6)
  #Movement: Update player position, check for snakes or ladders, and adjust accordingly.
  def move_player(player_idx, roll):
@@ -18,7 +20,7 @@ player_positions = [1, 1]  # Two players starting at position 1
     player_positions[player_idx] = snakes_ladders.get(new_pos, new_pos)
     ```
 Win Condition: Check if a player reaches position 100.
-if player_positions[player_idx] == 100:
+   if player_positions[player_idx] == 100:
     print(f"Player {player_idx + 1} wins!")
 
 
