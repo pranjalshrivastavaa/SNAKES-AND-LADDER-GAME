@@ -5,4 +5,9 @@ snakes_ladders = {
     # Add more as needed
 }
 
+#List for Player Positions
 player_positions = [1, 1]  # Two players starting at position 1
+#DICE ROLL
+ import random
+ dice_roll = random.randint(1, 6)
+
